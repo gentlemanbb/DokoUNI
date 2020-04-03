@@ -1,0 +1,28 @@
+<script>
+	var userID = getCookie("USER_ID");
+	var canRegistEvent = getCookie("REGIST_EVENT");
+	
+	if(userID == undefined || userID == "null" || userID == null || userID == '')
+	{
+		if(document.getElementById("sendDataForm"))
+		{
+			document.getElementById("sendDataForm").style.display="none";
+		}
+		
+		if(document.getElementById("loggedinFunctions"))
+		{
+			$("#loggedinFunctions").css({ visibility: "hidden" });
+			$("#eventOrganizerFunctions").css({ visibility: "hidden" });
+		}
+		
+		canRegistEvent = "0";
+	}
+	
+	if(canRegistEvent == "0")
+	{
+		if(document.getElementById("eventOrganizerFunctions"))
+		{
+			// $("#eventOrganizerFunctions").css({ visibility: "hidden" });
+		}
+	}
+</script>

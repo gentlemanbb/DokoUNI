@@ -1,0 +1,34 @@
+/************************************
+** トグル表示ボタン
+************************************/
+.toggle-wrap .toggle-button {
+
+}
+
+label.toggle-button {
+ color: #000;
+ font-size:0.8em;
+ display: block;
+ cursor: pointer;
+ margin-bottom: 1em;
+ padding: 3px 10px;
+ background-color: #fff;
+ border: 1px solid #777;
+ text-align: center;
+ margin-bottom: 1em;
+ border-radius: 3px;
+ width:100px;
+}
+ 
+.toggle-wrap .toggle-button:hover {
+  border-color: red;
+}
+ 
+.toggle-wrap .toggle-content,
+.toggle-wrap > input[type="checkbox"] {
+  display: none;
+}
+ 
+.toggle-wrap > input[type="checkbox"]:checked ~ .toggle-content {
+  display: block;
+}

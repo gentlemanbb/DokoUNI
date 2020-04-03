@@ -1,0 +1,58 @@
+body{
+	overflow: hidden;
+}
+
+#ft_header{
+	background-image: url("../img/FTnHeader.png");
+	width:2000px;
+	height:83px;
+	background-repeat: no-repeat;
+}
+
+#player1_count{
+	position:absolute;
+	top:10px;
+	left:150px;
+	float:left;
+	font-size:48pt;
+	color:white;
+	width:100px;
+	height:83px;
+	margin:0;
+}
+
+#player2_count{
+	position:absolute;
+	top:10px;
+	right:80px;
+	font-size:48pt;
+	color:white;
+	width:100px;
+	height:83px;
+	margin:0;
+}
+
+#player1_name{
+	position:absolute;
+	top:25px;
+	left:250px;
+	height:83px;
+	color:white;
+	font-size:48px;
+	margin:0;
+}
+
+#player2_name{
+	position:absolute;
+	top:25px;
+	right:230px;
+	height:83px;
+	color:white;
+	font-size:48px;
+	margin:0;
+}
+
+@font-face {
+	font-family: 'genkai-mincho';
+	src: url(../fonts/genkai-mincho.ttf);
+}

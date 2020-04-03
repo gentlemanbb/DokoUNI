@@ -1,0 +1,78 @@
+
+<script>
+	$(function() {
+		$("#MoveMyPage").click(function(){
+			SuspendRayout();
+			window.location.href = "user_page.php";
+			ResumeRayout();
+		});
+	});
+
+	$(function() {
+		$("#MoveAllEventPage").click(function(){
+			SuspendRayout();
+			window.location.href = "all_event.php";
+			ResumeRayout();
+		});
+	});
+
+	$(function() {
+		$("#MoveAllData").click(function(){
+			SuspendRayout();
+			window.location.href = "where.php";
+			ResumeRayout();
+		});
+	});
+
+	$(function() {
+		$("#MoveCurrentSearch").click(function(){
+			SuspendRayout();
+			window.location.href = "current_search.php";
+			ResumeRayout();
+		});
+	});
+
+	$(function() {
+		$("#slideL").click(function(){
+			if($('#slideL').hasClass('off'))
+			{
+				$('#slideL').removeClass('off');
+				$(this).animate({'marginLeft':'150px'},300).addClass('on');
+			}
+			else
+			{
+				$('#slideL').addClass('off');
+				$(this).animate({'marginLeft':'0px'},300);
+			}
+		});
+	});
+
+</script>
+
+<div id="slideL" class="off">
+	<div class="slide-inner">
+		<ul>
+			<li>
+				<a class="imgBtn32" href="javascript:void(0)" id="MoveMyPage" name="MoveMyPage" style="text-decoration:none;">
+					<img src="img/buttons/home32.png">マイページ
+				</a>
+			</li>
+			<li>
+				<a class="imgBtn32" href="javascript:void(0)" id="MoveAllData" style="text-decoration:none;">
+					<img src="img/buttons/data32.png">どこUNI宣言
+				</a>				
+			</li>
+			<li>
+				<a class="imgBtn32" href="javascript:void(0)" id="MoveCurrentSearch" style="text-decoration:none;">
+					<img src="img/buttons/search32.png">プレー履歴
+				</a>
+			</li>
+				<li>
+				<a class="imgBtn32" href="javascript:void(0)" id="MoveAllEventPage" style="text-decoration:none;">
+					<img src="img/buttons/add32.png">イベント登録
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div id="slideButton">>></div>
+</div>

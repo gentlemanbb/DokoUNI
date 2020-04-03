@@ -1,0 +1,63 @@
+﻿#slideL
+{
+	z-index:99;
+	cursor: pointer;
+	position: fixed;
+	top: 0;
+	left:-150px;
+	width: 150px;
+	height: auto;
+	background: rgb(39, 0, 0);
+}
+
+#slideL .slide-inner
+{
+	font-size: 0.5em;
+}
+
+#slideL ul
+{
+	list-style: none;
+	display:inline-block;
+	padding:0;
+	margin:0;
+}
+
+#slideL li a {
+	
+}
+
+#slideL li a:hover{
+	border-left: 8px solid #990033;
+	background-color: #474655;
+}
+
+#slideL a
+{
+	color:rgb(255,255,255);
+}
+
+#slideL a:hover
+{
+	color:rgb(134, 191, 255);
+}
+
+#slideButton
+{
+	margin:0;
+	border:solid 1pt rgb(0, 0, 0);
+	border-radius:4px;
+	position:fixed;
+	left:0;
+	top:0;
+	background-color:rgb(139, 139, 139);
+	float:left;
+	display:inline-block;
+	font-size:0.8em;
+	padding:5px 10px 5px 0px;
+}
+
+.slide-icon
+{
+
+}

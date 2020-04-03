@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+
+<div id="contents_wrapper">
+	<div class="loginWrapper">
+		<span class="box-title">
+			どこUNI？ログイン
+		</span>
+		<form method="post" id="sendData" name="sendData">
+			<div>
+				<p>
+					<label for="label_place" accesskey="n">ユーザID：</label><br/>
+					<input type="text" id="UserID" name="UserID" cols="20" rows="1" />
+				</p>
+				<p>
+					<label for="label_place" accesskey="n">パスワード：</label><br/>
+					<input type="text" id="Password" name="Password" cols="20" rows="1" />
+				</p>
+
+				<br/>
+
+				<p>
+					<button type="submit" class="noBorderButton" id="BtnLogin" name="BtnLogin" onsubmit="return false;">
+						<a class="btn" href="javascript:void(0)">ログイン</a>
+					</button>
+
+					<button type="submit" class="noBorderButton" id="NoLoginUse" name="NoLoginUse" onsubmit="return false;">
+						<a class="btn" href="javascript:void(0)">未ログインで使う</a>
+					</button>
+					<span class="mini"> 
+						(環境によってはログイン情報がクリアされません)
+					</span>
+				</p>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- admax -->
+<script src="//adm.shinobi.jp/s/8c8b2e52b1faa0be62ef85056906ca82"></script>
+<!-- admax -->

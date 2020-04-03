@@ -1,0 +1,141 @@
+<script>
+
+	$(function() {
+		$("#MoveMyPage").click(function(){
+			SuspendRayout();
+			window.location.href = "user_page.php";
+			ResumeRayout();
+		});
+	});
+
+	$(function() {
+		$("#MoveLoginPage").click(function(){
+			SuspendRayout();
+			window.location.href = "index.php";
+			ResumeRayout();
+		});
+	});
+
+	$(function() {
+		$("#MoveAllEventPage").click(function(){
+			SuspendRayout();
+			window.location.href = "all_event.php";
+			ResumeRayout();
+		});
+	});
+
+	// $(function() {
+	// 	$("#MoveRankingPage").click(function(){
+	// 		SuspendRayout();
+	// 		window.location.href = "user_ranking.php";
+	// 		ResumeRayout();
+	// 	});
+	// });
+		
+	// $(function() {
+	// 	$("#MoveWinningStreaktPage").click(function(){
+	// 		SuspendRayout();
+	// 		window.location.href = "winning_streak.php";
+	// 		ResumeRayout();
+	// 	});
+	// });
+	
+	// $(function() {
+	// 	$("#MoveHelpPage").click(function(){
+	// 		SuspendRayout();
+	// 		window.location.href = "help.php";
+	// 		ResumeRayout();
+	// 	});
+	// });
+
+	// $(function() {
+	// 	$("#MoveSupportPage").click(function(){
+	// 		SuspendRayout();
+	// 		window.location.href = "support.php";
+	// 		ResumeRayout();
+	// 	});
+	// });
+
+	$(function() {
+		$("#MoveSystemManagementPage").click(function(){
+			SuspendRayout();
+			window.location.href = "system.php";
+			ResumeRayout();
+		});
+	});
+
+	$(function() {
+		$("#LogOut").click(function(){
+			SuspendRayout();
+			setCookie('USER_ID','', Date.now() - 3600, '/');
+			setCookie("USER_ID", null);
+			window.location.href = "index.php";
+			ResumeRayout();
+		});
+	});
+
+	$(function() {
+		$("#MoveAllData").click(function(){
+			SuspendRayout();
+			window.location.href = "where.php";
+			ResumeRayout();
+		});
+	});
+
+	$(function() {
+		$("#MoveCurrentSearch").click(function(){
+			SuspendRayout();
+			window.location.href = "current_search.php";
+			ResumeRayout();
+		});
+	});
+	
+	// $(function() {
+	// 	$("#main_header").click(function(){
+	// 		SuspendRayout();
+	// 		window.location.href = "where.php";
+	// 		ResumeRayout();
+	// 	});
+	// });
+</script>
+
+	<span id="allUserFunction">
+		<a class="imgBtn" href="javascript:void(0)" id="MoveAllData" style="text-decoration:none;">
+			<img src="img/buttons/data.png">
+		</a>
+		<a class="imgBtn" href="javascript:void(0)" id="MoveCurrentSearch" style="text-decoration:none;">
+			<img src="img/buttons/search.png">
+		</a>
+		<!--
+		<button class="noBorderButton" type="submit" id="MoveRankingPage" name="MoveRankingPage">
+			<a class="btn" href="javascript:void(0)">投票数ランキング</a>
+		</button>
+		<button class="noBorderButton" type="submit" id="MoveHelpPage" name="MoveHelpPage">
+			<a class="btn" href="javascript:void(0)">Q&A</a>
+		</button>
+		<button class="noBorderButton" type="submit" id="MoveSupportPage" name="MoveSupportPage">
+			<a class="btn" href="javascript:void(0)">お問い合わせ</a>
+		</button>
+		-->
+	</span>
+	
+	<span id="eventOrganizerFunctions">
+		<a class="imgBtn" href="javascript:void(0)" id="MoveAllEventPage" style="text-decoration:none;">
+			<img src="img/buttons/add.png">
+		</a>
+	</span>
+	
+	<span id="loggedinFunctions">
+		<a class="imgBtn" href="javascript:void(0)" id="MoveMyPage" name="MoveMyPage" style="text-decoration:none;">
+			<img src="img/buttons/home.png">
+		</a>
+		<!-- 
+		<button class="noBorderButton" type="submit" id="MoveWinningStreaktPage" name="MoveWinningStreakPage">
+			<a class="btn" href="javascript:void(0)">連勝記録</a>
+		</button> -->
+		<!-- <button class="noBorderButton" type="submit" id="LogOut" name="LogOut"> -->
+		<!-- <a class="imgBtn" href="javascript:void(0)" id="LogOut" name="LogOut" style="text-decoration:none;">
+			<img src="img/buttons/logout.png">
+		</a>
+		-->
+	</span>

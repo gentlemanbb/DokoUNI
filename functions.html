@@ -1,0 +1,137 @@
+
+<script>
+		$(function() {
+			$("#MoveMyPage").click(function(){
+				SuspendRayout();
+				window.location.href = "user_page.php";
+				ResumeRayout();
+			});
+		});
+	
+		$(function() {
+			$("#MoveAllEventPage").click(function(){
+				SuspendRayout();
+				window.location.href = "all_event.php";
+				ResumeRayout();
+			});
+		});
+	
+		$(function() {
+			$("#MoveAllData").click(function(){
+				SuspendRayout();
+				window.location.href = "where.php";
+				ResumeRayout();
+			});
+		});
+	
+		$(function() {
+			$("#MoveCurrentSearch").click(function(){
+				SuspendRayout();
+				window.location.href = "current_search.php";
+				ResumeRayout();
+			});
+		});
+		
+		$(function() {
+			$("#MoveLoginPage").click(function(){
+				SuspendRayout();
+				window.location.href = "index.php";
+				ResumeRayout();
+			});
+		});
+				
+		$(function() {
+			$("#MoveRanking").click(function(){
+				SuspendRayout();
+				window.location.href = "user_ranking.php";
+				ResumeRayout();
+			});
+		});
+		
+		$(function() {
+			$("#MoveCombo").click(function(){
+				SuspendRayout();
+				window.location.href = "combo_character_select.php";
+				ResumeRayout();
+			});
+		});	
+
+		$(function() {
+			$("#OpenTwitterModal").click(function(){
+				modalOpen('modal-twitter');
+			});
+		});
+	
+		$(function() {
+			$("#slideButton").click(function()
+			{
+				if($('#slideL').hasClass('off'))
+				{
+					$('#slideL').removeClass('off');
+					$('#slideL').animate({'marginLeft':'150px'},300).addClass('on');
+					$('#slideButton').animate({'marginLeft':'150px'},300).addClass('on');
+					document.getElementById("slideButton").innerText = "≪";
+				}
+				else
+				{
+					$('#slideL').addClass('off');
+					$('#slideL').animate({'marginLeft':'0px'},300);
+					$('#slideButton').animate({'marginLeft':'0px'},300);
+					document.getElementById("slideButton").innerText = "≫";
+				}
+			});
+		});
+	
+	</script>
+	
+	<div id="slideL" class="off">
+		<div class="slide-inner">
+			<div id="loggedinFunctions">
+				<div class="slide-list" id="MoveMyPage" >
+					<a class="imgBtn32" href="javascript:void(0)" style="text-decoration: none">
+						<img src="img/buttons/home32.png"><span>マイページ</a></span>
+					</a>
+				</div>
+				<div class="slide-list" id="MoveAllData" >
+					<a class="imgBtn32" href="javascript:void(0)" style="text-decoration: none">
+						<img src="img/buttons/data32.png"><span>どこUNI宣言</span>
+					</a>
+				</div>
+				<div class="slide-list" id="MoveAllEventPage" >
+					<a class="imgBtn32" href="javascript:void(0)"style="text-decoration: none">
+						<img src="img/buttons/add32.png"><span>イベント登録</span>
+					</a>
+				</div>
+			</div>
+			<div>
+				<div class="slide-list" id="MoveCurrentSearch" >
+					<a class="imgBtn32" href="javascript:void(0)" style="text-decoration: none">
+						<img src="img/buttons/search32.png"><span>プレー履歴</span>
+					</a><br/>
+				</div>
+			</div>
+			<div>
+				<div class="slide-list" id="MoveRanking" >
+					<a class="imgBtn32" href="javascript:void(0)" style="text-decoration: none">
+						<img src="img/buttons/chart32.png"><span>ランキング</span>
+					</a><br/>
+				</div>
+			</div>
+			<div>
+				<div class="slide-list" id="MoveCombo" >
+					<a class="imgBtn32" href="javascript:void(0)" style="text-decoration: none">
+						<img src="img/buttons/combo32.png"><span>コンボ</span>
+					</a><br/>
+				</div>
+			</div>
+		</div>
+		<div id="slideButton">≫</div>
+	</div>
+
+	<div id="modal-twitter" class="modal">
+		公式ツイート
+		<div id="add_twitter_info">
+		<a class="twitter-timeline" data-width="320" data-height="420" data-theme="dark" data-link-color="#2288CC" href="https://twitter.com/doko_uni?ref_src=twsrc%5Etfw">Tweets by doko_uni</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+	</div>
+	

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<div>
+	<div id="watchingDateWrapper">
+		<p>
+			<div id="prev10Date">&lt;</div>
+			<div id="prevDate">&lt;</div>
+			<div id="watchingDate" class="watchingDate"></div>
+			<div id="nextDate">&gt;</div>
+			<div id="next10Date">&gt;</div>
+		</p>
+	</div>
+	<div id="watchingAreaWrapper">
+		<p>
+			<div id="watchingArea" class="watchingArea"></div>
+		</p>
+	</div>
+
+	<div id="eventWrapper">
+		<div id="event_title">直近イベント（タップで自動入力）</div>
+		<div id="eventTableWrapper">
+			<div id="event"></div>
+		</div>
+	</div>
+
+	<div id="output"></div>
+	<div class="sendWrapper" id="sendDataForm">
+			<span class="box-title">どこかに行く</span>
+			<form id="sendData" name="sendData">
+			<div>
+			<p>
+				<div>行く日：<span id="sent"></span></div>
+				<div id="joinDate"></div>
+			</p>
+			<p>
+				<label for="label_recommend_place" accesskey="n">この曜日に集まりやすい場所：</label>
+				<div id="recommendPlace"></div>
+			</p>
+			<p>
+				<label for="label_place" accesskey="n">場所：</label><br/>
+				<select class="formComboBox" name="placeID" id="placeID"></select><br/>
+				<span class="mini">表示されない場合は再ログインしてみてください。</span>
+			</p>
+			<p>
+				<label for="label_place" accesskey="n">参加区分：</label><br/>
+				<select class="formComboBox" name="joinType" id="joinType">
+				</select>
+			</p>
+			<p>
+				<label for="label_place" accesskey="n">目的：</label><br/>
+				<select class="formComboBox" name="purposeType" id="purposeType">
+				</select>
+			</p>
+
+			<br/>
+
+			<p>
+				<label for="label_place" accesskey="n">参加時刻（FROM - TO)：</label><br/>
+				<input type="time" id="datetime_from" name="datetime_from" class="from_to" />時 から<br/>
+				<input type="time" id="datetime_to" name="datetime_to"  class="from_to" />時 まで
+			</p>
+			
+			<p>
+				<label for="label_comment" accesskey="n">コメント：</label><br/>
+				<textarea row="3" name="comment" id="comment" style="height:3.5em; width:60%"></textarea>（50文字以内）
+			</p>
+					
+			<p>
+				<input type="checkbox" id="withTweet" name="withTweet" />ツイートする
+			</p>
+			
+			<button type="submit" class="noBorderButton" id="SendPopularity" name="SendPopularity" onsubmit="return false;">
+				<a class="btn" href="javascript:void(0)">送信</a>
+			</button>
+			<button type="submit" class="noBorderButton" id="SendCancel" name="SendCancel" onsubmit="return false;">
+				<a class="btn" href="javascript:void(0)">行くのやめた</a>
+			</button>
+			</div>
+		</form>
+	</div>
+
+	<div id="noLoggedinFunctions">
+		<p>※参加投票はログインしないと使用できません。</p>
+		<button type="submit" class="noBorderButton" id="MoveLoginPage" name="MoveLoginPage" onsubmit="return false;">
+			<a class="btn" href="javascript:void(0)">ログイン</a>
+		</button>
+	</div>
+
+	</div>
+	<!-- admax -->
+	<script src="//adm.shinobi.jp/s/8c8b2e52b1faa0be62ef85056906ca82"></script>
+	<!-- admax -->
+
+	
